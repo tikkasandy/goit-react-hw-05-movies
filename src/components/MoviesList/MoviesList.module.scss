@@ -1,0 +1,14 @@
+.MoviesList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.MovieItem {
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
